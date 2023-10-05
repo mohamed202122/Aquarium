@@ -26,6 +26,7 @@ export default function Login({ navigation }) {
   const [password, setPassword] = useState("");
   const [porder, setPorder] = useState("grey");
   const [porder2, setPorder2] = useState("grey");
+  const [showPasswordIcon, setShowPasswordIcon] = useState(false);
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(AUTH, (user) => {
